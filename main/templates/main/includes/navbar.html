@@ -1,0 +1,17 @@
+
+<div class="navbar-fixed">
+    <nav class="grey darken-3" role="navigation">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">&nbsp;&nbsp;Tourism Prediction System</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                {% include 'main/includes/navbar_buttons.html' %}
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <!--This is for controlling mobile-->
+    <ul class="sidenav" id="mobile-demo">
+        {% include 'main/includes/navbar_buttons.html' %}
+    </ul>

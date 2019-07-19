@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  {% load static %}
+	<!-- Page Title -->
+  <title>{% block title %}{% endblock %}</title>
+	<!-- Compressed Styles -->
+	<!-- <link href="css/slides.min.css?423331" rel="stylesheet" type="text/css"> -->
+  <link href="{% static 'main/css/slides.min.css' %}" rel="stylesheet" type="text/css"/>
+<!-- Custom Styles -->
+<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
+
+<!-- jQuery 3.3.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Compressed Scripts -->
+	<!-- <script src="js/slides.min.js?423331" type="text/javascript"></script> -->
+  <script type="text/javascript" src="{% static 'main/js/slides.min.js' %}"></script>
+<!-- Custom Scripts -->
+<!-- <script src="js/custom.js" type="text/javascript"></script> -->
+
+<!-- Fonts and Material Icons -->
+	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,800|Playfair Display:400|Material+Icons"/>
+	<style type="text/css">
+				.slides,
+			.slides p {
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+			}
+					.slides h1,
+			.slides h2,
+			.slides h3,
+			.slides h4,
+			.slides h5,
+			.slides h6 {
+				font-family: 'Playfair Display', sans-serif;
+				font-weight: 400;
+			}
+      </style>
+      
+  <!-- My navbar -->
+    <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet"/>
+		<!-- For icon in menu -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'main/js/materialize.min.js' %}"></script>
+</head>
+<body class="slides film noPreload animated">
+		
+<!-- SVG Library -->
+
+
+
+<!-- Panel Top #library/panel/panel-top-15.html -->
+<!-- This file messaging.html handles the toast which appears on screen whenever error encounters -->
+{% include 'main/includes/messaging.html' %}
+
+{% include 'main/includes/navbar.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+<script type="text/javascript">M.AutoInit();</script>
+
+</body>
+</html>

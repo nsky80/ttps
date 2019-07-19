@@ -1,0 +1,31 @@
+{% extends 'main/header.html' %}
+    {% block title %}Prediction{% endblock %}
+
+    {% block content %}
+{% load static %}
+<!-- Slide 2 (#55) -->
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="form-55">
+          <div class="pad shadow left selected ae-3">
+   <strong><h3> The tourist expected are:&nbsp{{tourist}}</h3></strong>
+   <table>
+       <tr><td>
+<button type="submit" class="button wide blue gradient ae-10 margin-top-2 cropBottom" name="button"><a  href="/index2" style="color:white">Go Back</a></button> </td>
+<td><button type="submit" class="button wide blue gradient ae-10 margin-top-2 cropBottom" name="button"><a  href="/" style="color:white">Home</a></button> 
+  </td>
+    </tr></table>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+  <!-- <div class="background" style="background-image:url(assets/img/background/img-55.jpg)"></div> -->
+  <div class="background" style="background-image:url({% static 'main/assets/img/background/img-55.jpg' %})"></div>
+
+</section>
+{% endblock %}

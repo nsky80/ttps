@@ -1,0 +1,12 @@
+{% extends 'main/header.html' %}
+    {% block title %}Stop | Under Construction{% endblock %}
+
+    {% block content %}
+		<center><h1>{{pagename}}</h1></center>
+        <div class="container">
+		
+            {% load static %}
+            <img class="responsive-img" src="{% static 'main/images/under_construction.jpg' %}">
+
+        </div>
+    {% endblock %}

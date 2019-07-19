@@ -1,0 +1,31 @@
+{% extends 'main/header.html' %}
+    {% block title %}To be{% endblock %}
+
+    {% block content %}
+{% load static %}
+<!-- Slide 2 (#55) -->
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="form-55">
+          <div class="pad shadow left selected ae-3">
+                <form method="post">
+                        {% csrf_token %}
+                        {{ form}}
+<input type="submit" class="button wide blue gradient ae-10 margin-top-2 cropBottom" value="Predict Tourists">
+<!-- < data-success-text="Done!" data-success-class="message-sent" name="button"  onclick="method()">Send message</button> -->
+           
+                </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+  <!-- <div class="background" style="background-image:url(assets/img/background/img-55.jpg)"></div> -->
+  <div class="background" style="background-image:url({% static 'main/assets/img/background/img-55.jpg' %})"></div>
+
+</section>
+{% endblock %}
